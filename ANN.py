@@ -22,7 +22,7 @@ model.fit(X_train, y_train, epochs=1000, verbose=0)
 loss, accuracy = model.evaluate(X_train, y_train)
 print(f"Loss: {loss}, Accuracy: {accuracy}")
 
-# Make predictions
+# Make prediction
 X_test = [[0, 0], [0, 1], [1, 0], [1, 1]]
 predictions = model.predict(X_test)
 print("Predictions:")
