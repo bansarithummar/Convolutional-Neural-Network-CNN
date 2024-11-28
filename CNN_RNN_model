@@ -26,7 +26,7 @@ def build_cnn_rnn_model(input_shape, num_classes):
     model = models.Model(inputs=[cnn_input, rnn_input], outputs=output)
     return model
 
-# Example usage:
+# Example usage
 input_shape = (28, 28, 1)  # Example input shape for CNN
 time_steps = 10  # Example number of time steps for RNN
 num_classes = 10  # Example number of output classes
