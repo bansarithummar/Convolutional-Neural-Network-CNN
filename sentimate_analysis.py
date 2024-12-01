@@ -5,7 +5,6 @@ import tensorflow as tf
 
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-
 def clean_logs(data_dir):
     logs_dir = os.path.join(data_dir, "logs")
     shutil.rmtree(logs_dir, ignore_errors=True)
