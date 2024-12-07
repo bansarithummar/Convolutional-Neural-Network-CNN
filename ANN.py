@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense
 
+
 # Sample data
 X_train = [[0, 0], [0, 1], [1, 0], [1, 1]]
 y_train = [[0], [1], [1], [0]]
