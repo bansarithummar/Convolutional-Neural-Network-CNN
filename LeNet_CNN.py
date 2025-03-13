@@ -62,10 +62,7 @@ model.compile(loss="categorical_crossentropy", optimizer=OPTIMIZER,
 model.summary()
 
 # use TensorBoard, princess Aurora!
-callbacks = [
-  # Write TensorBoard logs to `./logs` directory
-  tf.keras.callbacks.TensorBoard(log_dir='./logs')
-]
+callbacks = [tf.keras.callbacks.TensorBoard(log_dir='./logs')]
 
 # fit 
 history = model.fit(X_train, y_train, 
