@@ -9,7 +9,7 @@ y_train = [[0], [1], [1], [0]]
 
 # Define the model
 model = Sequential([
-    Dense(2, input_shape=(2,), activation='relu'),  # Input layer with 2 neurons
+    Dense(2, input_shape=(2,), activation='relu'), 
     Dense(1, activation='sigmoid')  # Output layer with 1 neuron
 ])
 
