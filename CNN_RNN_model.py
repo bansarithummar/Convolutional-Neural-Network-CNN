@@ -11,7 +11,7 @@ def build_cnn_rnn_model(input_shape, num_classes):
     cnn_flatten = layers.Flatten()(cnn_dropout1)
 
     # RNN part
-    rnn_input = layers.Input(shape=(None, input_shape[0]))  # Assuming input_shape[0] is the time step dimension
+    rnn_input = layers.Input(shape=(None, input_shape[0]))  
     rnn_lstm1 = layers.LSTM(64, return_sequences=True)(rnn_input)
     rnn_lstm2 = layers.LSTM(64)(rnn_lstm1)
 
