@@ -57,5 +57,6 @@ model.fit(x_train, y_train, batch_size=batch_size,
           epochs=EPOCHS, validation_data=(x_test, y_test))
 score = model.evaluate(x_test, y_test,
                        batch_size=BATCH_SIZE)
+
 print("\nTest score:", score[0])
 print('Test accuracy:', score[1])
