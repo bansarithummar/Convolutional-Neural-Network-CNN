@@ -9,12 +9,11 @@ np.random.seed(1671)
 EPOCHS = 200
 BATCH_SIZE = 128
 VERBOSE = 1
-NB_CLASSES = 10   # number of outputs = number of digits
+NB_CLASSES = 10   # number of outputs 
 N_HIDDEN = 128
 VALIDATION_SPLIT=0.2 # how much TRAIN is reserved for VALIDATION
 
 # loading MNIST dataset
-# verify
 # the split between train and test is 60,000, and 10,000 respectly 
 # one-hot is automatically applied
 mnist = keras.datasets.mnist
@@ -27,7 +26,7 @@ print(X_test.shape[0], 'test samples')
 X_train, X_test = X_train / 255.0, X_test / 255.0
 #X_train is 60000 rows of 28x28 values --> reshaped in 60000 x 784
 RESHAPED = 784
-#
+
 X_train = X_train.reshape(60000, RESHAPED)
 X_test = X_test.reshape(10000, RESHAPED)
 Y_train = Y_train.astype('float32')
