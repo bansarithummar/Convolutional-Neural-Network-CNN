@@ -11,6 +11,7 @@ BATCH_SIZE =500
 def load_data():
 	#load data
 	(X_train, y_train), (X_test, y_test) = datasets.imdb.load_data(num_words=n_words)
+	
 	# Pad sequences with max_len
 	X_train = preprocessing.sequence.pad_sequences(X_train, maxlen=max_len)
 	X_test = preprocessing.sequence.pad_sequences(X_test, maxlen=max_len)
@@ -22,7 +23,8 @@ def build_model():
 	# the model will take as input an integer matrix of size (batch, input_length)
 	# the model will output dimension (input_length, dim_embedding)
     # the largest integer in the input should be no larger
-    # than n_words (vocabulary size).
+    
+	# than n_words (vocabulary size).
 	model.add(layers.Embedding(n_words, 
 		dim_embedding, input_length=max_len))
 
