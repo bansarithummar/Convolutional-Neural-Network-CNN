@@ -17,4 +17,3 @@ im.astype(np.float32)
 out = model.predict(im)
 index = np.argmax(out)
 print(index)
-
