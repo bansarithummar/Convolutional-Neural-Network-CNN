@@ -18,5 +18,3 @@ out = model.predict(im)
 index = np.argmax(out)
 print(index)
 
-#plt.plot(out.ravel())
-#plt.show()
