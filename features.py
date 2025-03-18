@@ -9,6 +9,7 @@ import cv2
 # prebuild model with pre-trained weights on imagenet
 base_model = VGG16(weights='imagenet', include_top=True)
 print (base_model)
+
 for i, layer in enumerate(base_model.layers):
 	print (i, layer.name, layer.output_shape)
 
