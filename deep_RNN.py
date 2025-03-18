@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras import layers, models
+from tensorflow. keras import layers, models
 
 def build_cnn_deep_rnn_model(input_shape, num_classes):
     # CNN part
