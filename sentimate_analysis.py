@@ -18,9 +18,11 @@ def download_and_read(url):
         extract=True, cache_dir=".")
     local_folder = os.path.join("datasets", local_file.split('.')[0])
     labeled_sentences = []
+    
     for labeled_filename in os.listdir(local_folder):
         if labeled_filename.endswith("_labelled.txt"):
             with open(os.path.join(local_folder, labeled_filename), "r") as f:
+                
                 for line in f:
                     sentence, label = line.strip().split('\t')
                     labeled_sentences.append((sentence, label))
